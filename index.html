@@ -23,6 +23,7 @@
           color : #404040;
           background-color: #f8f8f8;
           border-radius: 20px;
+          margin-left: 12%;
           box-shadow: 3px 3px 9px 1px grey;
       }
       #grid {
@@ -30,14 +31,23 @@
         column-gap :30px;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
       }
-      
+
       @media(max-width :1050px) {
         #grid {
           display: grid;
           column-gap :10px;
           grid-row-gap: 10px;
-          grid-template-rows: 150px 150px;
-          grid-template-columns: 150px 150px 150px;
+          grid-template-rows: 1fr 1fr ;
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+      }
+      @media(max-width :480px) {
+        #grid {
+          display: grid;
+          column-gap :10px;
+          grid-row-gap: 10px;
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-template-columns: 1fr 1fr;
         }
       }
     </style>
