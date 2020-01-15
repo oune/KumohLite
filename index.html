@@ -6,27 +6,32 @@
 <script data-ad-client="ca-pub-1822687343837144" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
     <style>
-    body {
-      margin: 0px;
-    }
+      body {
+        margin: 0px;
+        display: grid;
+        /* column-gap :0px; */
+        grid-template-rows: 100px 1fr;
+        grid-template-columns: 1fr;
+      }
       a {
         font-family: 'Nanum Square';
         color: white;
         text-decoration: none;
         font-weight: bolder;
+        align-items: center;
       }
       h1 {
         font-size: 300%;
         background-color: #607d8b;
         margin: 0px;
-        margin-bottom: 30px;
+        margin-bottom: 0px;
         padding: 20px;
       }
       .box {
-          font-size: 150%;
+          font-size: 550%;
           text-align: center;
-          width: 150px;
-          height: 150px;
+          width: 100px;
+          height: 550px;
           color : #404040;
           background-color: #f8f8f8;
           border-radius: 20px;
@@ -34,11 +39,19 @@
           margin-top: 12%;
           box-shadow: 3px 3px 9px 1px grey;
           line-height: 150px;
+          writing-mode: tb-rl;
+          padding-left: 45px;
+      }
+      #title {
+        grid-column-start: 1;
+        grid-column-end: 10;
+        box-shadow: 3px 3px 9px 1px grey;
       }
       #grid {
         display: grid;
-        column-gap :30px;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        /* column-gap :0px; */
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
       }
 
       @media(max-width :1300px) {
@@ -62,7 +75,7 @@
     </style>
   </head>
   <body>
-    <h1><a href="https://oune.github.io/KumohLite/">금오공대 lite</a></h1>
+    <h1 id = "title"><a href="https://oune.github.io/KumohLite/">금오공대 lite</a></h1>
     <div id = "grid">
         <a href="http://kumoh.ac.kr/ko/index.do"class = " box">금오공대</a>
         <a href="http://nkaiser.kumoh.ac.kr/kaiser/mdi2/Login.html"class = " box">원스톱</a>
@@ -73,7 +86,7 @@
         와이파이</a>
         <a href="https://mail.kumoh.ac.kr/account/login.do"class = " box">웹메일</a>
         <a href="http://cs.kumoh.ac.kr/cs/index.do"class = " box">컴소</a>
-        <a href="https://oune.github.io">oune 블로그</a>
+        <a href="https://oune.github.io" class = " box" style="font-size: 500%">개발자블로그</a>
     </div>
 
   </body>
