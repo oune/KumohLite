@@ -1,95 +1,67 @@
 <!DOCTYPE html>
 <html lang="ko" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>KIT lite</title>
-<script data-ad-client="ca-pub-1822687343837144" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
-    <style>
-      body {
-        margin: 0px;
-        display: grid;
-        /* column-gap :0px; */
-        grid-template-rows: 100px 1fr;
-        grid-template-columns: 1fr;
-      }
-      a {
-        font-family: 'Nanum Square';
-        color: white;
-        text-decoration: none;
-        font-weight: bolder;
-        align-items: center;
-      }
-      h1 {
-        font-size: 300%;
-        background-color: #607d8b;
-        margin: 0px;
-        margin-bottom: 0px;
-        padding: 20px;
-      }
-      .box {
-          font-size: 400%;
-          text-align: center;
-          width: 60px;
-          height: 550px;
-          color : #404040;
-          background-color: #f8f8f8;
-          border-radius: 20px;
-          margin-left: 12%;
-          margin-top: 12%;
-          box-shadow: 3px 3px 9px 1px grey;
-          line-height: 150px;
-          writing-mode: tb-rl;
-          padding-left: 15px;
-      }
-      #title {
-        grid-column-start: 1;
-        grid-column-end: 10;
-        box-shadow: 3px 3px 9px 1px grey;
-      }
-      #grid {
-        display: grid;
-        /* column-gap :0px; */
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-      }
-
-      @media(max-width :1300px) {
-        #grid {
-          display: grid;
-          column-gap :10px;
-          grid-row-gap: 10px;
-          grid-template-rows: 1fr 1fr ;
-          grid-template-columns: 1fr 1fr 1fr 1fr;
-        }
-      }
-      @media(max-width :700px) {
-        #grid {
-          display: grid;
-          column-gap :10px;
-          grid-row-gap: 10px;
-          grid-template-rows: 1fr 1fr 1fr;
-          grid-template-columns: 1fr 1fr 1fr;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <h1 id = "title"><a href="https://oune.github.io/KumohLite/">금오공대 lite</a></h1>
-    <div id = "grid">
-        <a href="http://kumoh.ac.kr/ko/index.do"class = " box">금오공대</a>
-        <a href="http://onestop.kumoh.ac.kr/"class = " box">원스톱</a>
-        <a href="http://lms.kumoh.ac.kr/"class = " box">강의지원(구)</a>
-        <a href="http://elearning.kumoh.ac.kr/"class = " box">강의지원(신)</a>
-        <a href="http://se.kumoh.ac.kr/"class = " box">SE</a>
-        <a href="http://library.kumoh.ac.kr/index.ax"class = " box">도서관</a>
-        <a href="https://wifi.kumoh.ac.kr/fs/customwebauth/login.html?switch_url=https://wifi.kumoh.ac.kr/login.html&ap_mac=84:b2:61:7b:2a:70&client_mac=04:d3:b0:80:02:64&wlan=kumoh-web&redirect=www.msftconnecttest.com/redirect"class = " box">
-        와이파이</a>
-        <a href="https://mail.kumoh.ac.kr/account/login.do"class = " box">웹메일</a>
-        <a href="http://cs.kumoh.ac.kr/cs/index.do"class = " box">컴소</a>
-        <a href="https://dorm.kumoh.ac.kr/dorm/index.do"class = " box">생활관</a>
-        <a href="https://oune.github.io" class = " box">개발자블로그</a>
-    </div>
-
+    <h1 id="menu-title">
+      <a href="https://oune.github.io/KumohLite/">금오공대 lite</a>
+    </h1>
+    <ul class = list>
+      <li>
+        <div class="circle"><a class="circle-link" href="http://kumoh.ac.kr/ko/index.do"></a></div>
+        <a class = "title" href="http://kumoh.ac.kr/ko/index.do">금오공대</a>
+      </li>
+      <li>
+        <div class="circle"><a class="circle-link" href="http://onestop.kumoh.ac.kr/"></a></div>
+        <a class = "title" href="http://onestop.kumoh.ac.kr/">원스톱</a>
+      </li>
+      <li>
+        <div class="circle"><a class="circle-link" href="http://lms.kumoh.ac.kr/"></a></div>
+        <a class = "title" href="http://lms.kumoh.ac.kr/">강의지원(구)</a>
+      </li>
+      <li>
+        <div class="circle"><a class="circle-link" href="http://elearning.kumoh.ac.kr/"></a></div>
+        <a class = "title" href="http://elearning.kumoh.ac.kr/">강의지원(신)</a>
+      </li>
+      <li>
+        <div class="circle"><a class="circle-link" href="http://se.kumoh.ac.kr/"></a></div>
+        <a class = "title" href="http://se.kumoh.ac.kr/">SE</a>
+      </li>
+      <li>
+        <div class="circle"><a class="circle-link" href="http://library.kumoh.ac.kr/index.ax"></a></div>
+        <a class = "title" href="http://library.kumoh.ac.kr/index.ax">도서관</a>
+      </li>
+      <li>
+        <div class="circle"><a class="circle-link" href="https://wifi.kumoh.ac.kr/fs/customwebauth/login.html?switch_url=https://wifi.kumoh.ac.kr/login.html&ap_mac=84:b2:61:7b:2a:70&client_mac=04:d3:b0:80:02:64&wlan=kumoh-web&redirect=www.msftconnecttest.com/redirect"></a></div>
+        <a
+          class = "title"
+          href="https://wifi.kumoh.ac.kr/fs/customwebauth/login.html?switch_url=https://wifi.kumoh.ac.kr/login.html&ap_mac=84:b2:61:7b:2a:70&client_mac=04:d3:b0:80:02:64&wlan=kumoh-web&redirect=www.msftconnecttest.com/redirect"
+        
+        >
+          와이파이</a
+        >
+      </li>
+      <li>
+        <div class="circle"><a class="circle-link" href="https://mail.kumoh.ac.kr/account/login.do"></a></div>
+        <a class = "title" href="https://mail.kumoh.ac.kr/account/login.do" class="bolinkx"
+          >웹메일</a
+        >
+      </li>
+      <li>
+        <div class="circle"><a class="circle-link" href="http://cs.kumoh.ac.kr/cs/index.do"></a></div>
+        <a class = "title" href="http://cs.kumoh.ac.kr/cs/index.do">컴소</a>
+      </li>
+      <li>
+        <div class="circle"><a class="circle-link" href="https://dorm.kumoh.ac.kr/dorm/index.do"></a></div>
+        <a class = "title" href="https://dorm.kumoh.ac.kr/dorm/index.do">생활관</a>
+      </li>
+      <li>
+        <div class="circle"><a class="circle-link" href="https://velog.io/@oune"></a></div>
+        <a class = "title" href="https://velog.io/@oune">개발자블로그</a>
+      </li>
+    </ul>
   </body>
 </html>
